@@ -47,58 +47,31 @@ TEXT_FILE_EXTENSIONS = {
 
 DEFAULT_IGNORE = {
     # Version Control
-    ".git", ".svn", ".hg", ".bzr", ".cvs",
+    ".git", ".svn", ".hg",
     
     # Dependencies & Packages
-    "node_modules", "vendor", "packages", "lib", "libs", "third_party", "external",
-    "bower_components", ".npm", ".yarn", ".bundle", ".sass-cache", ".jspm",
+    "node_modules", "vendor", "packages",
     
     # Python
-    "venv", "__pycache__", ".eggs", "*.egg-info", ".tox", ".coverage", ".pytest_cache",
-    ".mypy_cache", ".dmypy.json", ".python-version", ".venv", "env", "ENV",
-    
-    # JavaScript/Node
-    ".nyc_output", ".grunt", ".bower", ".yo-rc.json", ".karma", ".protractor",
-    
-    # Java
-    "target", ".gradle", ".mvn", ".m2", ".settings", ".project", ".classpath",
-    
-    # C/C++
-    "build", "cmake-build-*", "CMakeFiles", "*.o", "*.obj", "*.exe", "*.dll", "*.so",
-    "*.dylib", "*.a", "*.lib", "*.pdb", "*.ilk", "*.exp", "*.manifest",
-    
-    # Rust
-    "target", ".cargo", "Cargo.lock",
-    
-    # Go
-    "vendor", ".go-build",
-    
-    # .NET
-    "bin", "obj", ".vs", "*.user", "*.suo", "*.cache", "*.log",
-    
-    # IDEs
-    ".idea", ".vscode", ".eclipse", ".settings", ".project", ".classpath", ".metadata",
-    ".recommenders", ".springBeans", ".sts4-cache", ".atom", ".sublime-project",
-    ".sublime-workspace",
-    
-    # OS
-    ".DS_Store", "Thumbs.db", "desktop.ini", ".directory", ".Trash-*",
+    "venv", "__pycache__", ".eggs", "*.egg-info",
     
     # Build & Dist
-    "dist", "build", "out", "output", "release", "debug", "x64", "x86", "win32", "linux",
-    "macos", "ios", "android", "*.app", "*.dmg", "*.pkg", "*.deb", "*.rpm", "*.msi",
+    "dist", "build", "target", "out", "bin", "obj",
+    
+    # IDEs
+    ".idea", ".vscode", ".vs",
+    
+    # OS & System
+    ".DS_Store", "Thumbs.db", "desktop.ini",
     
     # Logs & Temp
-    "logs", "*.log", "tmp", "temp", ".tmp", ".temp", ".cache", ".tmpdir",
+    "*.log", "logs", "tmp", "temp", ".tmp", ".cache",
     
-    # Testing
-    ".coverage", "coverage", "htmlcov", ".nyc_output", ".junit", "test-results",
+    # Testing & Coverage
+    ".coverage", "coverage", ".nyc_output",
     
-    # Documentation
-    "docs/_build", "docs/build", "site", ".doctrees",
-    
-    # Other
-    ".env", ".env.*", "secrets", "keys", "credentials", ".aws", ".ssh"
+    # Other Common
+    ".env", ".env.*", "secrets"
 }
 
 MAX_FILE_LINES = 500
