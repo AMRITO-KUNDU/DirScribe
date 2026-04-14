@@ -12,6 +12,17 @@ try:
 except Exception:
     GUI_AVAILABLE = False
 
+# Optional rich library for better terminal UI
+try:
+    from rich.console import Console
+    from rich.progress import Progress, SpinnerColumn, TextColumn, BarColumn, TaskID
+    from rich.panel import Panel
+    from rich.text import Text
+    from rich.table import Table
+    RICH_AVAILABLE = True
+except ImportError:
+    RICH_AVAILABLE = False
+
 
 # ---------------- CONFIG ---------------- #
 TEXT_FILE_EXTENSIONS = {

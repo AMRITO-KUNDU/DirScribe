@@ -23,8 +23,11 @@ A Python tool that generates comprehensive text summaries of software projects, 
 git clone https://github.com/yourusername/project-summarizer.git
 cd project-summarizer
 
+# Install optional dependencies for enhanced terminal UI
+pip install rich
+
 # No additional dependencies required for basic functionality
-# For GUI mode, tkinter is usually pre-installed with Python
+# Tkinter is usually pre-installed with Python
 ```
 
 ## Usage
