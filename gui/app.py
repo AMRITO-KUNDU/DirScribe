@@ -2,17 +2,16 @@
 
 from __future__ import annotations
 
-import importlib.util
 from pathlib import Path
 
 
 def pick_folder_gui() -> Path | None:
     """Open a folder picker when Tkinter is available."""
-    if importlib.util.find_spec("tkinter") is None:
+    try:
+        import tkinter as tk
+        from tkinter import filedialog
+    except ImportError:
         return None
-
-    import tkinter as tk
-    from tkinter import filedialog
 
     try:
         root = tk.Tk()
