@@ -1,1 +1,4 @@
 project_overview.txt
+__pycache__/
+*.py[cod]
+.pytest_cache/
